@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DIO | KULI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --dark: #2d3436;
+            --light: #f5f6fa;
+            --whatsapp: #25D366;
+            --youtube: #FF0000;
+            --telegram: #0088cc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--light);
+        }
+        
+        .profile-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .profile-img-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 6px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1a1a2e;
+            display: block;
+        }
+        
+        .profile-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 5px;
+        }
+        
+        .profile-title {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .social-link i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .whatsapp {
+            background-color: var(--whatsapp);
+        }
+        
+        .whatsapp-group {
+            background-color: #128C7E;
+        }
+        
+        .whatsapp-channel {
+            background-color: #075E54;
+        }
+        
+        .youtube {
+            background-color: var(--youtube);
+        }
+        
+        .telegram {
+            background-color: var(--telegram);
+        }
+        
+        @media (max-width: 480px) {
+            .profile-card {
+                padding: 25px 20px;
+            }
+            
+            .profile-img-container {
+                width: 130px;
+                height: 130px;
+            }
+            
+            .profile-name {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-img-container">
+            <img src="https://v1.cekapi.com/uploader/foo4245393850_6283854566488_05.06.2025_15.23.48.jpg" alt="DOCH Official" class="profile-img">
+        </div>
+        
+        <h1 class="profile-name">DOCH Official</h1>
+        <p class="profile-title">PEYAPPING HANDAL</p>
+        
+        <div class="social-links">
+            <a href="https://wa.me/628385456688" class="social-link whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp Pribadi
+            </a>
+            
+            <a href="https://whatsapp.com/channel/0029VbAJd4wHFxPAqBXeHm3c" class="social-link whatsapp-group" target="_blank">
+                <i class="fab fa-whatsapp"></i> Grup WhatsApp
+            </a>
+            
+            <a href="https://whatsapp.com/channel/0029VbAJd4wHFxPAqBXeHm3c" class="social-link whatsapp-channel" target="_blank">
+                <i class="fab fa-whatsapp"></i> Channel WhatsApp
+            </a>
+            
+            <a href="https://youtube.com/@kurobots" class="social-link youtube" target="_blank">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            
+            <a href="https://t.me/d1097" class="social-link telegram" target="_blank">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+        </div>
+    </div>
+</body>
+</html>
